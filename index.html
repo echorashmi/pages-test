@@ -15,25 +15,27 @@
             height: auto;
             margin-bottom: 20px;
         }
-        .video-container, .image-container {
-            margin: 20px 0;
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-        .image {
-            width: 200px;
-            height: auto;
-            margin: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 5px;
-        }
-        .activities {
+        .card {
             background-color: #fff;
-            margin: 20px auto;
+            margin: 10px;
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            max-width: 600px;
+            width: 280px;
             text-align: left;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .video-container {
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -42,28 +44,38 @@
     <h1>Welcome to Our Family Day at Topsy Farms!</h1>
     <p>Join us for an unforgettable day filled with joy and adventure at Topsy Farms. Experience the beauty of nature, bond with adorable animals, and create lasting memories with your family!</p>
 
-    <div class="activities">
-        <h2>Activities to Look Forward To:</h2>
-        <ul>
-            <li>Feeding and playing with baby sheep.</li>
-            <li>Exploring a wide variety of yarn for your knitting projects.</li>
-            <li>Sampling and buying locally produced honey.</li>
-            <li>Enjoying a scenic ferry ride to the island.</li>
-            <li>Unforgettable moments with the farm animals.</li>
-        </ul>
+    <div class="card-container">
+        <div class="card">
+            <img src="feeding_baby_sheep.jpg" alt="Feeding Baby Sheep">
+            <h3>Feeding Baby Sheep</h3>
+            <p>Get up close and personal with the cutest baby sheep. An experience the kids will love!</p>
+        </div>
+        <div class="card">
+            <img src="buying_yarn.jpg" alt="Buying Yarn">
+            <h3>Buying Yarn</h3>
+            <p>Explore a wide selection of yarns perfect for your knitting projects.</p>
+        </div>
+        <div class="card">
+            <img src="buying_honey.jpg" alt="Buying Honey">
+            <h3>Buying Honey</h3>
+            <p>Sample and purchase locally produced, sweet and natural honey.</p>
+        </div>
+        <div class="card">
+            <img src="ferry_ride.jpg" alt="Ferry Ride">
+            <h3>Ferry Ride to the Island</h3>
+            <p>Enjoy the scenic beauty as you take a ferry ride to the island.</p>
+        </div>
+        <div class="card">
+            <img src="playing_with_sheep.jpg" alt="Play with Baby Sheep">
+            <h3>Play with Baby Sheep</h3>
+            <p>Spend time playing and cuddling with adorable baby sheep.</p>
+        </div>
     </div>
 
     <div class="video-container">
-        <!-- Video placeholders -->
+        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fpauline.b.shaw%2Fvideos%2F264282359489369%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fpauline.b.shaw%2Fvideos%2F1334182957443235%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
     </div>
 
-    <div class="image-container">
-        <img src="image1_placeholder.jpg" alt="Activity Image" class="image">
-        <img src="image2_placeholder.jpg" alt="Activity Image" class="image">
-        <img src="image3_placeholder.jpg" alt="Activity Image" class="image">
-        <img src="image4_placeholder.jpg" alt="Activity Image" class="image">
-    </div>
-
-    <!-- Embed the videos as previously shown -->
 </body>
 </html>
